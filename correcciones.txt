@@ -1,0 +1,77 @@
+Sub-Competencia:
+  componente: aplica estructuras condicionales para resolver un problema
+
+Error original:los condicionales no embonaban correctamente por la sangría
+
+Cambio realizado: me aseguré de que la sangría y la lógica condicional estuvieran bien para que los condicionales funcionaran.
+        if beca=="si":
+          print("FELICIDADES, OJALA LA MANTENGAS")
+        else:
+          print("Consiguete una porque la escuela esta cara:( ")
+          
+          
+if beca == "si":
+    promedio_beca=int(input("¿Cuánto promedio necesitas para mantenerla?"))
+    if (promedio(lista) > promedio_beca):
+        print("¡Felicidades, tu promedio final fue de ", promedio(lista), "y afortunadamente conservas la beca :) !")
+    elif (promedio_beca==promedio):
+        print("¡Esfuerzate más, tu promedio fue de ", promedio(lista), "y por poco no conservas la beca :0 !")
+    else:
+        print("¡Lo siento, tu promedio fue de ", promedio(lista), "y lamentablemente no conservas la beca:( !")  
+else:
+    print("Tu promedio final fue de", promedio(lista))
+
+
+Líneas de código donde se ve la corrección:
+4 a 7  def beca
+60 a 68  if beca
+---------------------------------------------------------------------------------------------------------------------------------------
+Sub-Competencia: 
+    componente: aplica correctamente ciclos while
+
+Error original: El ciclo while no tenía lógica alguna debido a la estructuración que tenía.
+while materia_1>0:
+            if materia_1 < 80:
+                print("¡Échale más ganas!")
+            else:
+                print("¡Sigue así!")
+
+Cambio realizado: Se eliminaron los ifs y else y ahora ya se hizo correctamente la estructura del while
+while materia_1<0 or materia_1 >101:
+    materia_1=int(input("Tu número fue incorrecto, ¿cuánto sacaste en la materia 1 del 1 al 100?"))
+prom(materia_1)
+
+Líneas de código donde se ve la corrección:
+18 a 21 materia_1
+23 a 26 materia_2
+28 a 31 materia_3
+33 a 36 materia_4
+38 a 41 materia_5
+43 a 46 materia_6
+--------------------------------------------------------------------------------------------------------------------------------------
+Sub-Competencia:
+    componente: define Algoritmos correctos
+    
+Error original: la función no se estaba llamando en nigun momento y se repetía enc ada una de la variable
+    def por_tareas(materia_1):
+        while materia_1>0:
+            if materia_1 < 80:
+                print("¡Échale más ganas!")
+            else:
+                print("¡Sigue así!")
+else:
+    print("Tu calificación es erronea, vuelvela a escribir")
+
+Cambio realizado: Se otimizó el uso de la función y ahora en vez de que haya una en cada variable simplemente se llama la función
+prom(materia_1)
+
+Líneas de código donde se ve la corrección:
+21prom(materia_1)
+26prom(materia_2)
+31prom(materia_3)
+36prom(materia_4)
+41prom(materia_5)
+46prom(materia_6)
+
+
+    
